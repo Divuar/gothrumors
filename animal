@@ -1,0 +1,10 @@
+    function Animal () {};
+    Animal.prototype.getName = function () {
+    return this.name 
+    };
+    var Cat = function (name)     {
+    var catt = function () { this.name = name };
+    catt.prototype = new Animal();
+    catt.prototype.meow = function () { return console.log("Cat " + this.getName() + " says mooo!") };
+    return new catt();
+    };

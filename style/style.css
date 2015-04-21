@@ -1,0 +1,250 @@
+/*FOR LAPTOP SCREENS*/
+/*animation*/
+#cemetery { 
+	display: inherit;
+	z-index: -1;
+	left:0px;
+	width: 100%; 
+	height: 100%; 
+	background-image: url(../img/bg-clouds-test.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: animatedBackground 15s linear infinite;
+}
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+/*container*/
+#allThatMatters{
+	z-index: 1;
+	position: absolute;
+	top:110px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width:98%;
+	height: 80%;
+}
+
+/*laptop rules*/
+@media screen and (min-width: 400px) {
+body {
+	background-color:black;
+	/*color:black;*/
+	color:white;
+	font-family: 'Roboto Condensed', sans-serif;
+	/*margin-top:100px;*/
+	text-align: center;
+
+	
+}
+header {
+	/*position: relative;*/
+	font-size: 23px;
+	text-align: left;
+	margin-left: 130px;
+
+}
+footer {
+	position: absolute;
+	font-size: 12px;
+	color:#4D4D4D;
+	position: absolute; 
+	bottom: 5px;
+	right:20px;
+}
+
+#news {
+	background-color: rgba(0,0,0,0.6);
+	width:900px;
+	height:90px;
+	text-align: center;
+	margin:25px auto;
+	margin-top: 7px;
+	padding:15px 20px;
+}
+
+.updateBox {
+	height: 23px;
+	width:23px;
+	display: inline-block;
+	margin:10px;
+}
+.updateBox:hover {
+	cursor: pointer;
+}
+.updateBox:active {
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+
+.normFont {
+	font-size: 23px;
+}
+}
+
+/*FOR TABLET HORIZONTAL SCREENS*/
+
+@media screen and (device-width: 768px){
+
+	#cemetery { 
+	display: none;
+	}
+
+	#link img {
+		display: none;
+	}
+
+    header {
+	font-size: 18px;
+	text-align: center;
+	margin-left: 10px;
+
+	}
+	#news {
+	background-color: rgba(0,0,0,0.8);
+	width:80%;
+	height:80px;
+	text-align: center;
+	margin:25px auto;
+	margin-top: 7px;
+	padding:15px 30px;
+	}
+
+	.normFont {
+	font-size: 17px;
+	}
+
+
+	body {
+	background-image: url("../img/back00.jpg");
+	/*color:black;*/
+	color:white;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-top:50px;
+	text-align: center;
+	}
+	footer {
+	font-size: 10px;
+	color:#4D4D4D;
+	position: fixed; 
+	bottom: 2px;
+	width:100%;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+	.updateBox {
+	height: 23px;
+	width:23px;
+	display: inline-block;
+	margin:10px;
+	}
+	.updateBox:hover {
+	cursor: pointer;
+	}
+	.updateBox:active {
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+	}
+}
+
+
+
+
+
+
+
+/*FOR SMALL SCREENS*/
+
+@media screen and (max-width: 399px) {
+    #cemetery { 
+	display: none;
+	}
+
+	#link img {
+		display: none;
+	}
+    header {
+	font-size: 13px;
+	text-align: center;
+	margin-left: 10px;
+
+	}
+	#news {
+	background-color: rgba(0,0,0,0.8);
+	width:80%;
+	height:80px;
+	text-align: center;
+	margin:25px auto;
+	margin-top: 7px;
+	padding:15px 30px;
+	}
+
+	.normFont {
+	font-size: 15px;
+	}
+
+
+	body {
+	background-image: url("../img/back00.jpg");
+	color:black;
+	color:white;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-top:50px;
+	text-align: center;
+	}
+	footer {
+	font-size: 10px;
+	color:#4D4D4D;
+	position: fixed; 
+	bottom: 5px;
+	width:100%;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+	.updateBox {
+	height: 23px;
+	width:23px;
+	display: inline-block;
+	margin:10px;
+	}
+	.updateBox:hover {
+	cursor: pointer;
+	}
+	.updateBox:active {
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+	}
+	.twitter-share-button {
+	display: block;
+	}
+}
+
+
+
+
+/*background animation*/
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+#cemetary { 
+	width: 560px; 
+	height: 400px; 
+	background-image: url(../img/bg-clouds.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 40s linear infinite;
+}
